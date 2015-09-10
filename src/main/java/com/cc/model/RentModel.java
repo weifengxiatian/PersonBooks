@@ -2,6 +2,7 @@ package com.cc.model;
 
 /**
  * Created by Administrator on 2015-9-9.
+ * sdfsd
  */
 public class RentModel {
     private int sumElec;
