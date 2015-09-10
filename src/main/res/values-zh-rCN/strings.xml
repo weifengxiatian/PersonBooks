@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">个人札记</string>
+
+    <string name="subtitle_water">当前水表吨数</string>
+    <string name="subtitle_elec">电</string>
+    <string name="subtitle_rent">房租</string>
+    <string name="subtitle_net">网费</string>
+    <string name="sub_elecAndwater">水/电费</string>
+    <string name="commit">提交</string>
+    <string name="perDialogtitle">设置电费和水费</string>
+    <string name="hint_perElec">电费单价</string>
+    <string name="hint_perwater">水费单价</string>
+    <string name="showper">调整电、水单价</string>
+    <string name="current_per">显示当前水电单价</string>
+    <string name="Consume_water">消耗水(/吨)</string>
+    <string name="consume_elec">消耗电(/度)</string>
+    <string name="cur_rent">当月房租</string>
+    <string name="mornning">早餐</string>
+    <string name="noon">午餐</string>
+    <string name="evening">晚餐</string>
+    <string name="showField_rent">当前租房费用:%1$.1f</string>
+    <string name="showfield_detail">房租:%1$.1f\n%2$s月消耗%3$d度电, 消耗%4$d吨水,\n电费%5$.1f, 水费%6$.1f.\n另外宽带费用%7$.0f</string>
+    <string name="show_per">电费价格:%1$.1f每度, 水费价格:%2$.1f每吨</string>
+</resources>

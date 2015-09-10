@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Content -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/SubTextHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:text="@string/mornning" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/SubTextHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/noon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/SubTextHeight"
+            android:gravity="center_vertical"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="98dp"
+            android:text="@string/evening" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginLeft="36dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBottom="@+id/textView1"></EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginLeft="36dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBottom="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginLeft="36dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="10"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_alignBottom="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+            android:text="@string/commit" />
+    </RelativeLayout>
+
+    <!-- Side Drawer -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/drawer_view" -->
+    <!-- android:layout_width="160dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_gravity="start" -->
+    <!-- android:background="#88FFFFFF" -->
+    <!-- android:clickable="true" -->
+    <!-- android:fitsSystemWindows="true" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- </LinearLayout> -->
+
+    <ScrollView
+        android:id="@+id/drawer_view"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#88FFFFFF"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8.0dp"
+                android:paddingTop="8.0dp"
+                android:text="@string/sub_elecAndwater" />
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8.0dp"
+                android:paddingTop="8.0dp"
+                android:text="item2" />
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8.0dp"
+                android:paddingTop="8.0dp"
+                android:text="当月房租" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

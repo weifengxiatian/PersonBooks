@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <!-- Status bar color -->
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <!-- Window color -->
+        <item name="android:windowBackground">@color/background_material_light</item>
+        <!-- <item name="android:statusBarColor">#88009688</item> -->
+    </style>
+
+    <style name="HaveActionbarTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    </style>
+
+    <style name="ContentTextStyle" >
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TitleTexyStyle" parent="ContentTextStyle">
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>
