@@ -137,8 +137,8 @@ public class RentEditActivity extends AppCompatActivity implements View.OnClickL
                     "8",
                     rentMode.getInt(BaseSQLite.RecordColumns.CONSUME_CURRENT＿WATT_HOUR),
                     rentMode.getInt(BaseSQLite.RecordColumns.CONSUME_CURRENT_WATER),
-                    rentMode.getLong(BaseSQLite.RecordColumns.SUM_WATT)/100.0,
-                    rentMode.getLong(BaseSQLite.RecordColumns.SUM_WATER)/100.0,
+                    rentMode.getDouble(BaseSQLite.RecordColumns.SUM_WATT),
+                    rentMode.getDouble(BaseSQLite.RecordColumns.SUM_WATER),
                     rentMode.getInt(BaseSQLite.RecordColumns.NETCOST)/100.0
             ));
         } catch (JSONException e) {

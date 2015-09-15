@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -189,5 +190,14 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
         ViewServer.get(this).removeWindow(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
+            mDrawerLayout.closeDrawer(Gravity.LEFT);
+            return;
+        }
+        super.onBackPressed();
     }
 }
